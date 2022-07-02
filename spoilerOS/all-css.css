@@ -1,0 +1,81 @@
+.header{
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    font-size: calc(6px + 1.1vw);
+}
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.content-spoiler{
+    width: 80%;
+
+}
+.spoiler{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: rgba(67, 105, 185,0.5) solid 1px ;
+    margin-top: 15px;
+}
+.spoiler-title>h3:hover{
+    color:rgb(67, 105, 185); 
+    cursor: pointer;
+    
+}
+.spoiler-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(6px + 1.1vw);
+    
+}
+
+.spoiler-plus{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Horrizontal{
+    width: 1rem;
+    height: 0.13rem;
+    background-color:rgb(67, 105, 185); 
+    position: absolute;
+}
+.Vertical{
+    width: 0.13rem;
+    height: 1rem;
+    background-color:rgb(67, 105, 185); 
+    position: relative;
+}
+.spoiler-plus:checked :nth-child(1){
+    transform: translate(-3px,6px) rotate(45deg);
+    transform-origin: right bottom;
+}
+.spoiler-plus:checked :nth-child(2){
+    transform:translate(6px,3px) rotate(45deg);
+    transform-origin: left top;
+}
+
+.spoiler-txt{
+    width: 80%;
+    margin-bottom: 20px;
+    display: none;
+    transition: all 0.5s;
+    
+}
+
+
+.active{
+    display: block;
+
+}
