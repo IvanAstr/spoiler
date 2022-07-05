@@ -1,0 +1,89 @@
+.header{
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    font-size: calc(6px + 1.1vw);
+}
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.content-spoiler{
+    width: 80%;
+
+}
+.spoiler{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: rgba(67, 105, 185,0.5) solid 1px ;
+    margin-top: 15px;
+}
+.spoiler-title>h3:hover{
+    color:rgb(67, 105, 185); 
+    cursor: pointer;
+    
+}
+.spoiler-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(6px + 1.1vw);
+    
+}
+
+.spoiler-plus{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Horrizontal{
+    width: 1vw;
+    height: 0.13vw;
+    background-color:rgb(67, 105, 185); 
+    position: absolute;
+    transition: all 0.5s;
+}
+.Vertical{
+    width: 0.13vw;
+    height: 1vw;
+    background-color:rgb(67, 105, 185); 
+    position: relative;
+    transition: all 0.5s;
+
+}
+.close:nth-child(1){
+    transform: rotate(45deg);
+    transition: all 0.5s;
+
+}
+.close:nth-child(2){
+    transform: rotate(45deg);
+    transition: all 0.5s;
+
+}
+.spoiler-plus{
+    transition: all 0.5s;
+}
+
+.spoiler-txt{
+    width: 80%;
+    margin-bottom: 20px;
+    display: none;
+    transition: all 0.5s;
+    font-size: calc(6px + 1vw);
+    
+}
+
+.active{
+    display: block;
+}
+
